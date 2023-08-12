@@ -17,6 +17,12 @@ body {
     position: relative;
 }
 
+/* @media only screen and (max-width: 600px) {
+    .wrapper {
+        background-color: red;
+    }
+} */
+
 .logo a {
     font-size: 50px;
     font-weight: 800;
@@ -24,6 +30,16 @@ body {
     font-family: courier;
     color: #364f6b;
 }
+
+/* @media only screen and (max-width: 600px) {
+    .logo a{
+        font-size: 20px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #364f6b;
+    }
+} */
 
 .menu {
     float: right;
@@ -141,12 +157,17 @@ p {
 }
 
 .kartu-tutor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 20%;
     margin: 0 auto;
 }
 
 .kartu-tutor img {
-    width: 80%;
+    max-width: 176px;
+    max-height: 176px;
     border-radius: 50%;
 }
 
